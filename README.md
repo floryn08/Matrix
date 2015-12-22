@@ -3,8 +3,9 @@
 Exemplu:
 
 array.txt:
+```bash
 37  48  59  70  81   2  13  24  35 
-36  38  49  60  71  73   3  14  25 
+36  38  49  60  71  73   3  14  25
 26  28  39  50  61  72  74   4  15 
 16  27  29  40  51  62  64  75   5 
 6  17  19  30  41  52  63  65  76 
@@ -12,7 +13,9 @@ array.txt:
 67  78   8  10  21  32  43  54  56 
 57  68  79   9  11  22  33  44  46 
 47  58  69  80   1  12  23  34  45 
+```
 
+```bash
 out.txt:
  37 | 48 | 59 | 70 | 81 |  2 | 13 | 24 | 35
 ----+----+----+----+----+----+----+----+----
@@ -63,3 +66,4 @@ Sa se afiseze toate elementele de pe o coloana al carui numar este dat de la tas
 Verificati daca exista doua linii ale matricii care au aceeasi suma a elementelor.
 Verificati daca exista doua coloane ale matricii care au aceeasi suma a elementelor.
 Aduna la fiecare element al matricii suma indicilor elementului respectiv; se afiseaza apoi matricea modificata.
+```
