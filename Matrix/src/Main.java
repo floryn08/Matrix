@@ -12,10 +12,11 @@ public class Main {
 
 		WorkMatrix workSquare = new WorkMatrix(readMatrix.getMatrix());
 
-		PrintWriter writer = new PrintWriter("src/out.txt", "UTF-8");
+		PrintWriter writer = new PrintWriter("Matrix/src/out.txt", "UTF-8");
 		
 		writer.print(readMatrix.toString());
 		writer.println("Suma matrice= "+workSquare.SumaMatrix());
+		writer.println("ok");
 		writer.close();
 	}
 }

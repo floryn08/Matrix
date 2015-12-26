@@ -24,3 +24,4 @@ public class WorkMatrix {
 		}
 		return s;
 	}
+}
