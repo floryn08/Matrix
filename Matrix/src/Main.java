@@ -15,8 +15,13 @@ public class Main {
 		PrintWriter writer = new PrintWriter("Matrix/src/out.txt", "UTF-8");
 		
 		writer.print(readMatrix.toString());
+		writer.println("Elementul maxim din matrice= "+workSquare.MaxMatrix());
+		writer.println("Elementul minim din matrice= "+workSquare.MinMatrix());
+		writer.println("Numarul de elemente pare= "+workSquare.Pare());
+		writer.println("elementele pare="+workSquare.AfisPare());
 		writer.println("Suma matrice= "+workSquare.SumaMatrix());
 		writer.println("ok");
+		writer.println();
 		writer.close();
 	}
 }
