@@ -1,5 +1,6 @@
 
-
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class WorkMatrix 
 {
@@ -71,26 +72,60 @@ public class WorkMatrix
 		return counter;
 	}
 
-	public int AfisPare()  //nu e gata, need more time
+	public int[] AfisPare()  //nu e gata, need more time
 	{
-		
+				
+		int[] array=new int[99];
+		for(int w=0;w<array.length;w++)
 		for (int i = 0; i < matrix.length; i++) 
 		{			
 			for (int j = 0; j < matrix.length; j++) 
-			{				
-				
+			{			
 					if(matrix[i][j]%2==0)
-					return matrix[i][j];	
-				
+					array[w]=matrix[i][j];
+					
 			}
 		}
-		return 0;
+		return array;
+		
+	}
+
+	
+	
+	public int Impare()
+	{
+		int counter=0;
+		for (int i = 0; i < matrix.length; i++) 
+		{
+			for (int j = 0; j < matrix.length; j++) 
+			{				
+					if(matrix[i][j]%2==1)
+						counter++;				
+			}
+		}
+		return counter;
 		
 	}
 	
-	public int Impar()
+	public int[] AfisImpare()
 	{
 		
+		int[] array=new int[99];
+		for(int w=0;w<array.length;w++)
+		for (int i = 0; i < matrix.length; i++) 
+		{			
+			for (int j = 0; j < matrix.length; j++) 
+			{			
+					if(matrix[i][j]%2==1)
+					array[w]=matrix[i][j];
+					
+			}
+		}
+		return array;
+	}
+	
+	public int PatratPerf()
+	{
 		
 		return 0;
 		

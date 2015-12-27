@@ -3,6 +3,7 @@
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
 
 public class Main {
 
@@ -19,6 +20,10 @@ public class Main {
 		writer.println("Elementul minim din matrice= "+workSquare.MinMatrix());
 		writer.println("Numarul de elemente pare= "+workSquare.Pare());
 		writer.println("elementele pare="+workSquare.AfisPare());
+		writer.println("Numarul de elemente impare= "+workSquare.Impare());
+		writer.println("Elementele impare= "+workSquare.AfisImpare());
+		writer.println("Numarul de patrate perfecte= "+workSquare.PatratPerf());
+		
 		writer.println("Suma matrice= "+workSquare.SumaMatrix());
 		writer.println("ok");
 		writer.println();
