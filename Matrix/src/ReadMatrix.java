@@ -1,6 +1,4 @@
 
-
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -86,8 +84,8 @@ public class ReadMatrix {
         return buff.toString();
     }
 
-	public int[][] getMatrix() {
-		return matrix;
-	}
+    public int[][] getMatrix() {
+        return matrix;
+    }
 
 }
