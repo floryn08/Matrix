@@ -258,4 +258,47 @@ public class WorkMatrix
 		return temp;
 	}
 	
+	public int DiagPrinc()
+	{
+		int s=0;
+		for(int i=0;i<matrix.length;i++)
+			s=s+matrix[i][i];
+		
+		return s;		
+	}
+	
+	public int DiagSec()
+	{
+		int s=1;
+		for(int i=0;i<matrix.length;i++)
+			s+=matrix[i][matrix.length-i-1];
+		
+		return s;		
+	}
+	
+	public int SumaElDiagP()
+	{
+		int s=0;
+		for (int i=0;i<matrix.length;i++)
+		{
+			for (int j=0;j<matrix.length;j++)
+				if(i<j)
+					s+=matrix[i][j];
+		}
+		
+		return s;
+		
+	}
+	
+	public String TestDiag()
+	{
+		
+		if(DiagPrinc()==DiagSec())
+			return "Sumele sunt egale";
+		else
+			return "Sumele nu sunt egale";
+		
+		
+	}
+	
 }

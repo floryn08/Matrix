@@ -37,5 +37,10 @@ Sume:
 	>Suma impare= 1681
 	>Suma prime= 1640
 	>Suma patrate= 1640
+Daca matricea este patratica: 
+	>Suma elementelor de pe diagonala principala= 369
+	>Suma elementelor de pe diagonala secundara= 370
+	>Suma elementelor de deasupra dig principale= 1746
+	>Sumele nu sunt egale
 ok
 

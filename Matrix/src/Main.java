@@ -65,6 +65,11 @@ public class Main
 		writer.println("	>Suma impare= "+workSquare.SumaImpare());
 		writer.println("	>Suma prime= "+workSquare.SumaPrime());
 		writer.println("	>Suma patrate= "+workSquare.SumaPatrate());
+		writer.println("Daca matricea este patratica: ");
+		writer.println("	>Suma elementelor de pe diagonala principala= "+workSquare.DiagPrinc());
+		writer.println("	>Suma elementelor de pe diagonala secundara= "+workSquare.DiagSec());
+		writer.println("	>Suma elementelor de deasupra dig principale= "+workSquare.SumaElDiagP());
+		writer.println("	>"+workSquare.TestDiag());
 		writer.println("ok");
 		writer.println();
 		writer.close();
