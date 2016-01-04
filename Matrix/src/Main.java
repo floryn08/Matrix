@@ -22,7 +22,10 @@ public class Main
 		int[][] matrix = readMatrix.getMatrix();
 		
 		writer.print(readMatrix.toString());
-		writer.println();writer.println();writer.println();writer.println();
+		writer.println();
+		writer.println();
+		writer.println();
+		writer.println();
 		writer.println("Elementul maxim din matrice= "+workSquare.MaxMatrix());
 		writer.println("Elementul minim din matrice= "+workSquare.MinMatrix());
 		writer.println("Numarul de elemente pare= "+workSquare.Pare());
@@ -75,7 +78,7 @@ public class Main
 		writer.println("	>"+workSquare.TestDiag());
 		writer.println();
 		
-		
+		/*
 		writer.print("Linia ceruta= ");
 		for(int i=0; i<workSquare.AfisLine(matrix).length; i++)
 		{
@@ -89,6 +92,10 @@ public class Main
 			writer.print(workSquare.AfisCol(matrix)[j]+" ");
 		}
 		writer.println();
+		*/
+		
+		writer.println(workSquare.SumLin());
+		writer.println(workSquare.SumCol());
 		
 		
 		writer.println("ok");
