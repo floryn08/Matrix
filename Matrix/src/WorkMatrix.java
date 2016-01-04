@@ -1,10 +1,11 @@
 
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class WorkMatrix 
 {
-	 
+	static Scanner sc = new Scanner(System.in);
 	
 	private int[][] matrix;
 	
@@ -27,6 +28,8 @@ public class WorkMatrix
 		result[org.length] = added;
 		return result;
 	}
+	
+
 
 	public int SumaMatrix()
 	{
@@ -115,8 +118,7 @@ public class WorkMatrix
 		}
 		return max;
 	}
-	
-	
+		
 	public int MinMatrix()
 	{
 		int min=matrix[0][0];
@@ -188,8 +190,7 @@ public class WorkMatrix
 		}
 		return temp;
 	}
-	
-	
+		
 	public double PatratPerf()
 	{
 		double a = 0,contor = 0;
@@ -294,11 +295,66 @@ public class WorkMatrix
 	{
 		
 		if(DiagPrinc()==DiagSec())
-			return "Sumele sunt egale";
+			return "Sumele sunt egale"+"		"+DiagPrinc()+"="+DiagSec();
 		else
-			return "Sumele nu sunt egale";
+			return "Sumele nu sunt egale"+"		"+DiagPrinc()+"!="+DiagSec();
 		
 		
+	}
+	
+	public int[] AfisLine(int[][] matrix)
+	{
+		System.out.println("Numerotarea incepe de la 0");
+		System.out.println("Introduceti numarul liniei: ");
+		int a=sc.nextInt();
+		int[] temp = new int[0];
+		for(int i=0;i<matrix.length;i++)
+		{		
+			
+			for(int j=0;j<matrix.length;j++)
+			
+				if(i==a)
+				{
+					temp = addElement(temp, matrix[a][j]);
+					
+				}
+				
+			
+			
+		}
+		return temp;
+	}
+	
+	public int[] AfisCol(int[][] matrix)
+	{
+		System.out.println("Numerotarea incepe de la 0");
+		System.out.println("Introduceti numarul coloanei: ");
+		int a=sc.nextInt();
+		int[] temp = new int[0];
+		for(int i=0;i<matrix.length;i++)
+		{			
+			for(int j=0;j<matrix.length;j++)
+				if(j==a)
+				{
+					temp = addElement(temp, matrix[i][a]);
+					
+				}	
+			
+		}
+		return temp;
+	}
+
+	public int SumCol()
+	{
+		int s=0;
+		for(int i=0;i<matrix.length;i++)
+		{
+			for(int j=1;j<matrix.length;j++)
+				s+=matrix[i][j];
+					
+		}
+		
+		return s;
 	}
 	
 }

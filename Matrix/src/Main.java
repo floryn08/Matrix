@@ -3,7 +3,7 @@
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
-import java.util.Arrays;
+
 
 public class Main 
 {
@@ -16,6 +16,8 @@ public class Main
 		WorkMatrix workSquare = new WorkMatrix(readMatrix.getMatrix());
 
 		PrintWriter writer = new PrintWriter("Matrix/src/out.txt", "UTF-8");
+		
+		
 		
 		int[][] matrix = readMatrix.getMatrix();
 		
@@ -57,21 +59,41 @@ public class Main
 		{
 			writer.print(workSquare.AfisPrim(matrix)[i] + " ");
 		}
-		writer.println();
-		writer.println();writer.println();
+		writer.println();writer.println();writer.println();
+		
 		writer.println("Sume:");
 		writer.println("	>Suma matrice= "+workSquare.SumaMatrix());
 		writer.println("	>Suma pare= "+workSquare.SumaPare());
 		writer.println("	>Suma impare= "+workSquare.SumaImpare());
 		writer.println("	>Suma prime= "+workSquare.SumaPrime());
 		writer.println("	>Suma patrate= "+workSquare.SumaPatrate());
+		writer.println();
 		writer.println("Daca matricea este patratica: ");
 		writer.println("	>Suma elementelor de pe diagonala principala= "+workSquare.DiagPrinc());
 		writer.println("	>Suma elementelor de pe diagonala secundara= "+workSquare.DiagSec());
 		writer.println("	>Suma elementelor de deasupra dig principale= "+workSquare.SumaElDiagP());
 		writer.println("	>"+workSquare.TestDiag());
+		writer.println();
+		
+		
+		writer.print("Linia ceruta= ");
+		for(int i=0; i<workSquare.AfisLine(matrix).length; i++)
+		{
+			writer.print(workSquare.AfisLine(matrix)[i]+" ");
+		}
+		writer.println();
+		
+		writer.print("Coloana ceruta= ");
+		for(int j=0; j<workSquare.AfisCol(matrix).length;j++)
+		{
+			writer.print(workSquare.AfisCol(matrix)[j]+" ");
+		}
+		writer.println();
+		
+		
 		writer.println("ok");
 		writer.println();
 		writer.close();
+		
 	}
 }
