@@ -51,8 +51,7 @@ public class ReadMatrix {
         }
     }
 
-    @Override
-    public String toString() {
+    public String toString(int [][] matrix) {
         StringBuffer buff = new StringBuffer();
 
         if (matrix != null) {

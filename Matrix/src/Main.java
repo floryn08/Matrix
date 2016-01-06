@@ -20,8 +20,7 @@ public class Main
 		
 		
 		int[][] matrix = readMatrix.getMatrix();
-		
-		writer.print(readMatrix.toString());
+		writer.print(readMatrix.toString(matrix));
 		writer.println();
 		writer.println();
 		writer.println();
@@ -39,7 +38,7 @@ public class Main
 		
 		writer.println("Numarul de elemente impare= "+workSquare.Impare());	
 		
-		writer.print("NUmerele impare : ");
+		writer.print("Numerele impare : ");
 		for (int i = 0; i < workSquare.AfisImpare(matrix).length; i++) 
 		{
 			writer.print(workSquare.AfisImpare(matrix)[i] + " ");
@@ -78,26 +77,33 @@ public class Main
 		writer.println("	>"+workSquare.TestDiag());
 		writer.println();
 		
-		/*
+		
 		writer.print("Linia ceruta= ");
-		for(int i=0; i<workSquare.AfisLine(matrix).length; i++)
+		int []temp = workSquare.AfisLine(matrix);
+		for(int i=0; i<temp.length; i++)
 		{
-			writer.print(workSquare.AfisLine(matrix)[i]+" ");
+			writer.print(temp[i]+" ");
 		}
+		
+		writer.println();
+		writer.print("Coloana ceruta= ");
+		int []temp2 = workSquare.AfisCol(matrix);
+		for(int i=0; i<temp2.length; i++)
+		{
+			writer.print(temp2[i]+" ");
+		}
+
 		writer.println();
 		
-		writer.print("Coloana ceruta= ");
-		for(int j=0; j<workSquare.AfisCol(matrix).length;j++)
-		{
-			writer.print(workSquare.AfisCol(matrix)[j]+" ");
-		}
-		writer.println();
-		*/
 		
 		writer.println(workSquare.SumLin());
 		writer.println(workSquare.SumCol());
 		
-		
+		int [][] temp3 = workSquare.AfisMatrix2(matrix);
+		writer.print(readMatrix.toString(temp3));
+//		writer.println(readMatrix.toString(temp3));
+
+		writer.println();
 		writer.println("ok");
 		writer.println();
 		writer.close();
