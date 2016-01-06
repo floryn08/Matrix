@@ -98,7 +98,7 @@ public class Main
 		
 		writer.println(workSquare.SumLin());
 		writer.println(workSquare.SumCol());
-		
+		writer.println();writer.println();
 		int [][] temp3 = workSquare.AfisMatrix2(matrix);
 		writer.print(readMatrix.toString(temp3));
 //		writer.println(readMatrix.toString(temp3));
